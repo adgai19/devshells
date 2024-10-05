@@ -1,0 +1,143 @@
+{
+  "nodes": {
+    "devshell": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1722113426,
+        "narHash": "sha256-Yo/3loq572A8Su6aY5GP56knpuKYRvM2a1meP9oJZCw=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "67cce7359e4cd3c45296fb4aaf6a19e2a9c757ae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1727826117,
+        "narHash": "sha256-K5ZLCyfO/Zj9mPFldf3iwS6oZStJcU4tSpiXTMYaaL0=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "3d04084d54bedc3d6b8b736c70ef449225c361b1",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-parts",
+        "type": "indirect"
+      }
+    },
+    "godlv": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728063897,
+        "narHash": "sha256-bMtqYc7zdKIHDp+nsPO0f69jf0soCsgKhvtPz+x5iAY=",
+        "owner": "go-delve",
+        "repo": "delve",
+        "rev": "025d47c6e96e8ab5a2d2c142ae554e760cddabf8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "go-delve",
+        "repo": "delve",
+        "type": "github"
+      }
+    },
+    "golines": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1727750203,
+        "narHash": "sha256-2Moj9HPMGZKs2ZDEq4Njw5ZL5mVsHLpIFF9lrS0k4vc=",
+        "owner": "segmentio",
+        "repo": "golines",
+        "rev": "13c3f0d546260ae1a722ad39e761392f7c52b653",
+        "type": "github"
+      },
+      "original": {
+        "owner": "segmentio",
+        "repo": "golines",
+        "type": "github"
+      }
+    },
+    "gotest-tools": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725508102,
+        "narHash": "sha256-Oki7Eq5pMpBxiBB7O+Px2KqIrg6hAouU9y0+XYpMewI=",
+        "owner": "gotestyourself",
+        "repo": "gotest.tools",
+        "rev": "0b81523ff268a1f1b0baf4a5da67e42fbb86880b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gotestyourself",
+        "repo": "gotest.tools",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1722073938,
+        "narHash": "sha256-OpX0StkL8vpXyWOGUD6G+MA26wAXK6SpT94kLJXo6B4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e36e9f57337d0ff0cf77aceb58af4c805472bfae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1727825735,
+        "narHash": "sha256-0xHYkMkeLVQAMa7gvkddbPqpxph+hDzdu1XdGPJR+Os=",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/fb192fec7cc7a4c26d51779e9bab07ce6fa5597a.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/fb192fec7cc7a4c26d51779e9bab07ce6fa5597a.tar.gz"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1728018373,
+        "narHash": "sha256-NOiTvBbRLIOe5F6RbHaAh6++BNjsb149fGZd1T4+KBg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "bc947f541ae55e999ffdb4013441347d83b00feb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "devshell": "devshell",
+        "flake-parts": "flake-parts",
+        "godlv": "godlv",
+        "golines": "golines",
+        "gotest-tools": "gotest-tools",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
