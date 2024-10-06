@@ -49,6 +49,7 @@
               pkgs.delve
               pkgs.golines
               pkgs.gotest
+              pkgs.gopls
             ];
 
           };
