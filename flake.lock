@@ -35,54 +35,6 @@
         "type": "indirect"
       }
     },
-    "godlv": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1728063897,
-        "narHash": "sha256-bMtqYc7zdKIHDp+nsPO0f69jf0soCsgKhvtPz+x5iAY=",
-        "owner": "go-delve",
-        "repo": "delve",
-        "rev": "025d47c6e96e8ab5a2d2c142ae554e760cddabf8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "go-delve",
-        "repo": "delve",
-        "type": "github"
-      }
-    },
-    "golines": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1727750203,
-        "narHash": "sha256-2Moj9HPMGZKs2ZDEq4Njw5ZL5mVsHLpIFF9lrS0k4vc=",
-        "owner": "segmentio",
-        "repo": "golines",
-        "rev": "13c3f0d546260ae1a722ad39e761392f7c52b653",
-        "type": "github"
-      },
-      "original": {
-        "owner": "segmentio",
-        "repo": "golines",
-        "type": "github"
-      }
-    },
-    "gotest-tools": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1725508102,
-        "narHash": "sha256-Oki7Eq5pMpBxiBB7O+Px2KqIrg6hAouU9y0+XYpMewI=",
-        "owner": "gotestyourself",
-        "repo": "gotest.tools",
-        "rev": "0b81523ff268a1f1b0baf4a5da67e42fbb86880b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gotestyourself",
-        "repo": "gotest.tools",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1722073938,
@@ -131,9 +83,6 @@
       "inputs": {
         "devshell": "devshell",
         "flake-parts": "flake-parts",
-        "godlv": "godlv",
-        "golines": "golines",
-        "gotest-tools": "gotest-tools",
         "nixpkgs": "nixpkgs_2"
       }
     }
