@@ -63,6 +63,12 @@
               ];
             };
 
+            python = {
+              packages = [
+                (pkgs.python312.withPackages(ps: [ps.psycopg2]))
+              ];
+            };
+
           };
         };
     };
