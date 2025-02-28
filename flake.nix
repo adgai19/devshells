@@ -65,7 +65,7 @@
 
             python = {
               packages = [
-                (pkgs.python312.withPackages (ps: [ ps.psycopg2  ps.pandas]))
+                (pkgs.python312.withPackages (ps: [ ps.psycopg2  ps.pandas ps.requests]))
               ];
             };
 
