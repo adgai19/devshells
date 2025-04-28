@@ -39,6 +39,7 @@
                 pkgs.golines
                 pkgs.gotest
                 pkgs.gopls
+                pkgs.govulncheck
 
                 pkgs.xorg.libX11.dev
               ];
