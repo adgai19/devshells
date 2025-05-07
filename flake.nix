@@ -40,7 +40,6 @@
                 pkgs.gotest
                 pkgs.gopls
                 pkgs.govulncheck
-pkgs.go-migrate
 
                 pkgs.xorg.libX11.dev
               ];
