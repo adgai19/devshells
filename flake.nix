@@ -27,7 +27,7 @@
                 pkgs.protoc-gen-go-grpc
                 pkgs.gotests
                 pkgs.gotestsum
-                pkgs.gotools
+                # pkgs.gotools
                 pkgs.protoc-gen-go
                 pkgs.iferr
                 pkgs.impl
