@@ -8,13 +8,25 @@
 
   };
 
-  outputs = inputs@{ flake-parts, ... }:
+  outputs =
+    inputs@{ flake-parts, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         inputs.devshell.flakeModule
       ];
-      systems = [ "x86_64-linux"  "aarch64-darwin"];
-      perSystem = { config, self', inputs', pkgs, system, ... }:
+      systems = [
+        "x86_64-linux"
+        "aarch64-darwin"
+      ];
+      perSystem =
+        {
+          config,
+          self',
+          inputs',
+          pkgs,
+          system,
+          ...
+        }:
         {
           devshells = {
             go = {
@@ -40,6 +52,7 @@
                 pkgs.gotest
                 pkgs.gopls
                 pkgs.govulncheck
+                pkgs.air
 
                 pkgs.xorg.libX11.dev
               ];
@@ -66,7 +79,11 @@
 
             python = {
               packages = [
-                (pkgs.python312.withPackages (ps: [ ps.psycopg2  ps.pandas ps.requests]))
+                (pkgs.python312.withPackages (ps: [
+                  ps.psycopg2
+                  ps.pandas
+                  ps.requests
+                ]))
               ];
             };
 
