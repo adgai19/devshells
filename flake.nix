@@ -32,7 +32,7 @@
             go = {
               packages = [
                 pkgs.bashInteractive
-                pkgs.go
+                pkgs.go_1_25
                 pkgs.gofumpt
                 pkgs.golangci-lint
                 pkgs.gomodifytags
