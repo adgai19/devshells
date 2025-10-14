@@ -65,6 +65,7 @@
                 pkgs.nodejs_22
                 pkgs.yarn
                 pkgs.nodePackages.ts-node
+								pkgs.pnpm_9
                 # pkgs.nodePackages.typescript
               ];
             };
