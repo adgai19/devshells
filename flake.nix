@@ -62,9 +62,8 @@
               packages = [
 
                 pkgs.bashInteractive
-                pkgs.nodejs_22
+                pkgs.nodejs_24
                 pkgs.yarn
-                pkgs.nodePackages.ts-node
 								pkgs.pnpm_9
                 # pkgs.nodePackages.typescript
               ];
