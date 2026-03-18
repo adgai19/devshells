@@ -79,7 +79,7 @@
                 pkgs.nilaway
                 pkgs.govulncheck
                 pkgs.air
-                config.packages.orchestrion
+                # config.packages.orchestrion
               ]
               ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
                 # pkgs.darwin.apple_sdk.frameworks.SystemConfiguration
