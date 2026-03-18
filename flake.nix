@@ -33,6 +33,15 @@
         , system
         , ...
         }:
+        let
+          go_1_25_8 = pkgs.go_1_25.overrideAttrs (_: {
+            version = "1.25.8";
+            src = pkgs.fetchurl {
+              url = "https://go.dev/dl/go1.25.8.src.tar.gz";
+              hash = "sha256-6YjUokRqx/4/baoImljpk2pSo4E1Wt7ByJgyMKjWxZ4=";
+            };
+          });
+        in
         {
           packages.orchestrion = pkgs.buildGoModule {
             name = "orchestrion";
@@ -47,7 +56,7 @@
             go = {
               packages = [
                 pkgs.bashInteractive
-                pkgs.go_1_25
+                go_1_25_8
                 pkgs.gofumpt
                 pkgs.golangci-lint
                 pkgs.pkg-config
