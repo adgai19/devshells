@@ -83,11 +83,29 @@
         "type": "github"
       }
     },
+    "orchestrion": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1770649096,
+        "narHash": "sha256-sK4ZQtJCkVaiZqfBrbglnKb0jXIdyjwMsa/cJhVS0jI=",
+        "owner": "DataDog",
+        "repo": "orchestrion",
+        "rev": "1bb6a6c928aa2a65de34a9f3800b7249b7aa660b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DataDog",
+        "ref": "v1.8.0",
+        "repo": "orchestrion",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "devshell": "devshell",
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "orchestrion": "orchestrion"
       }
     }
   },

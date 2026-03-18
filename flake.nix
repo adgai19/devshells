@@ -8,6 +8,11 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
 
+    orchestrion = {
+      url = "github:DataDog/orchestrion/v1.8.0";
+      flake = false;
+    };
+
   };
 
   outputs =
@@ -29,6 +34,15 @@
         , ...
         }:
         {
+          packages.orchestrion = pkgs.buildGoModule {
+            name = "orchestrion";
+            version = "1.8.0";
+            src = inputs.orchestrion;
+            vendorHash = "sha256-dzyfDAOifNZ7R0B3Nd520X3xZXqnakybcMEAClBCcjQ=";
+            subPackages = [ "." ];
+            doCheck = false;
+          };
+
           devshells = {
             go = {
               packages = [
@@ -56,6 +70,7 @@
                 pkgs.nilaway
                 pkgs.govulncheck
                 pkgs.air
+                config.packages.orchestrion
               ]
               ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
                 # pkgs.darwin.apple_sdk.frameworks.SystemConfiguration
