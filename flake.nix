@@ -82,9 +82,13 @@
                 # config.packages.orchestrion
               ]
               ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
-                # pkgs.darwin.apple_sdk.frameworks.SystemConfiguration
-                # pkgs.darwin.apple_sdk.frameworks.CoreFoundation
-                # pkgs.darwin.apple_sdk.frameworks.Security
+                pkgs.cyrus_sasl.out
+              ];
+              env = pkgs.lib.optionals pkgs.stdenv.isDarwin [
+                {
+                  name = "CGO_LDFLAGS";
+                  value = "-L${pkgs.cyrus_sasl.out}/lib";
+                }
               ]
               ++ pkgs.lib.optionals pkgs.stdenv.isLinux [
                 pkgs.xorg.libX11.dev
@@ -94,9 +98,9 @@
               packages = [
 
                 pkgs.bashInteractive
-                pkgs.nodejs_24
+                pkgs.nodejs_25
                 pkgs.yarn
-                pkgs.pnpm_9
+                pkgs.pnpm
                 # pkgs.nodePackages.typescript
               ];
             };
