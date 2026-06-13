@@ -98,30 +98,13 @@
               packages = [
 
                 pkgs.bashInteractive
-                pkgs.nodejs_25
+                pkgs.nodejs
                 pkgs.yarn
                 pkgs.pnpm
                 # pkgs.nodePackages.typescript
               ];
             };
-            kubernetes = {
-              packages = [
 
-                pkgs.kubernetes
-                pkgs.minikube
-                pkgs.kind
-              ];
-            };
-
-            python = {
-              packages = [
-                (pkgs.python312.withPackages (ps: [
-                  ps.psycopg2
-                  ps.pandas
-                  ps.requests
-                ]))
-              ];
-            };
 
           };
         };
